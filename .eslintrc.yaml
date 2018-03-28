@@ -1,0 +1,77 @@
+---
+env:
+  es6: true
+  node: true
+extends:
+- eslint:recommended
+- google
+- plugin:node/recommended
+plugins:
+  - node
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
+overrides:
+- files: "**/*.test.js"
+  rules:
+    node/no-unpublished-require: 0
+    node/no-missing-require: 0
+rules:
+  no-invalid-this: off
+  spaced-comment:
+  - error
+  - always
+  - exceptions:
+    - "/"
+  no-console: off
+  indent:
+  - error
+  - 2
+  - SwitchCase: 1
+  linebreak-style:
+  - error
+  - unix
+  quotes:
+  - error
+  - single
+  semi:
+  - error
+  - never
+  arrow-parens:
+  - error
+  - as-needed
+  max-len:
+  - warn
+  - ignoreComments: true
+    ignoreTrailingComments: true
+    ignoreStrings: true
+    ignoreTemplateLiterals: true
+  new-cap:
+  - error
+  valid-jsdoc:
+  - off
+  - prefer:
+      return: return
+  curly:
+  - error
+  - multi
+  - consistent
+  brace-style:
+  - error
+  - 1tbs
+  - allowSingleLine: true
+  require-jsdoc:
+  - off
+  prefer-destructuring:
+  - error
+  - array: true
+    object: true
+  - enforceForRenamedProperties: false
+  no-unused-vars:
+  - error
+  prefer-const:
+  - error
+  no-warning-comments:
+  - warn
+  - terms:
+    - TODO

@@ -1,0 +1,32 @@
+{
+  "name": "stoner",
+  "version": "1.0.0",
+  "description": "Retrieve and format repository milestones info",
+  "main": "./bin/stoner.js",
+  "repository": "https://github.com/kuzyn/stoner",
+  "author": "kuzyn <hello@samuelcousin.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "uglify": "uglifyjs --compress --mangle --toplevel --output ./bin/stoner.js ./lib/stoner.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^5.2.0",
+    "inquirer-autocomplete-prompt": "^0.12.2",
+    "node-emoji": "^1.8.1",
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-node": "^6.0.1",
+    "uglify-es": "^3.3.9"
+  },
+  "eslintIgnore": [
+    "./bin/monstro.js"
+  ]
+}
